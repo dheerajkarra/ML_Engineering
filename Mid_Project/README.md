@@ -1,6 +1,6 @@
 # Mid Term Project
 
-This is my Mid Term project for ML Zoomcamp from DataTalks.Club
+This is my Mid Term project for ML Zoomcamp from DataTalks.Club.
 
 ## Problem description
 
@@ -8,9 +8,9 @@ The main aim of the project is to containarize and deploy the ML pipeline built
 after performing EDA and training of the model. 
 
 The dataset used is of Credit card Fraud Detection of size 150MB and can be
-downloaded from this link in kaggle website [link](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) 
+downloaded from this [link](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) in kaggle website.  
 The probability that a transaction is fraud using the features provided is obtained
- using this ML modelling.
+using this ML modelling exercise.
 
 This is a imbalanced classification problem in which the distribution of response
 variable is skewed in the sense that the number of frauds are very much less
@@ -77,14 +77,16 @@ can be obtained using predict.py in another terminal.
 app in one terminal and docker run in another terminal) built using the 
 below commands:
 
-a) docker images - To get the list of images
-b) docker build -t cc_fraud:v1 .  - To build the docker image from Dockerfile
+*  docker images - To get the list of images
+*  docker build -t cc_fraud:v1 .  - To build the docker image from Dockerfile
 with name and tag specified as name:tag
-c) docker run -it --rm -p 9696:9696 a2c3e4d50472 - To run the docker image 
+*  docker run -it --rm -p 9696:9696 a2c3e4d50472 - To run the docker image 
 by specifying the port and the image id of the latest build.
 'a2c3e4d50472' is an example image id.
-d) docker rmi <Image_ID> - To remove the docker image by specifying the image id.
+*  docker rmi <Image_ID> - To remove the docker image by specifying the image id.
 
 **NOTE:**
+
 The Screenshots of the run are in Output folder.
+
 The plots generated during EDA are in Plots folder.
