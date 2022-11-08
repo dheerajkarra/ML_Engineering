@@ -54,8 +54,15 @@ pipenv install --system --deploy
 ## Containerization
 Containerization is done using Docker and Dockerfile is provided.
 
-**Cloud deployment**
-This is to be updated
+## Cloud deployment
+The Flask Web App is deployed using pythonanywhere.com. 
+
+The URL used is : 'https://dheerajkarra.pythonanywhere.com/predict'. The test 
+data is passed and the output probability is obtained. The code used is same as 
+in predict.py with the change in URL. The Screenshots are present. 
+
+[Reference Link:](https://github.com/nindate/ml-zoomcamp-exercises/blob/main/how-to-use-pythonanywhere.md)
+
 
 ## How to Run
 

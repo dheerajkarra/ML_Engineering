@@ -1,6 +1,8 @@
 import os
 import pickle
 from flask import Flask, request, jsonify
+import numpy as np
+
 # from waitress import serve
 
 def predict(features):
@@ -14,7 +16,7 @@ def predict(features):
 
 app = Flask('cc_fraud_detection')
 
-import numpy as np
+
 
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():    

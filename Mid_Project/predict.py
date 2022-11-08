@@ -2,6 +2,7 @@ import requests
 
 url = 'http://127.0.0.1:9696/predict'
 # url = 'http://localhost:9696/predict'
+# url = 'https://dheerajkarra.pythonanywhere.com/predict'
 
 test_data = [-0.20149514, -0.64227728, -0.34188807,  1.55620616,  1.74121904,
           2.63890391,  0.39847742,  0.13830365,  0.65733883, -0.01659394,
@@ -18,8 +19,11 @@ response = requests.post(url, json=json_data)
 # response = requests.post(url, data=json.dumps(json_data))
 print(response.json())
 
-# {'fraud_prediction': 0.10833443377158349}
+# Final Run
 # {'fraud_prediction': 0.11542491049324093}
+
+# This output was in previous run
+# {'fraud_prediction': 0.10833443377158349}
 
 # test_data = np.array([[-0.20149514, -0.64227728, -0.34188807,  1.55620616,  1.74121904,
 #          2.63890391,  0.39847742,  0.13830365,  0.65733883, -0.01659394,
