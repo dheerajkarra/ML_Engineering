@@ -298,7 +298,9 @@ for key, classifier in classifiers.items():
 # Classifiers:  SVC Has a training score of 94.0 % accuracy score
 # Classifiers:  DecisionTreeClassifier Has a training score of 90.0 % accuracy score
 
-    
+##########################################################################
+# Parameter Tuning
+
 # Use GridSearchCV to find the best parameters.
 from sklearn.model_selection import GridSearchCV
 

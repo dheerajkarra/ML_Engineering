@@ -24,7 +24,7 @@ used to deal with the imbalance of response variable.
 Extensive EDA such as distributions of the variables, correlation analysis, visualizations of various
 analysis are done. Basic steps such as missing values, min-max values are also done.
 Outlier analysis (using IQR or other methods) and feature selection 
-to select variables among V1 to V2 (using mutual info score from sklearn) 
+to select variables among V1 to V28 (eg. chi-square chi2 or mutual info score from sklearn) 
 can be done as next steps.
 
 ## Model training
@@ -61,7 +61,7 @@ The URL used is : 'https://dheerajkarra.pythonanywhere.com/predict'. The test
 data is passed and the output probability is obtained. The code used is same as 
 in predict.py with the change in URL. The Screenshots are present. 
 
-[Reference Link:](https://github.com/nindate/ml-zoomcamp-exercises/blob/main/how-to-use-pythonanywhere.md)
+[Reference Link](https://github.com/nindate/ml-zoomcamp-exercises/blob/main/how-to-use-pythonanywhere.md)
 
 
 ## How to Run
@@ -75,7 +75,8 @@ Related commands in Pipenv:
 * pipenv install --system --deploy
 
 2. The model which is selected as best model can be obtained by running 
-Script.py file or it is provided as .bin file.
+Script.py file or it is provided as .bin file. Please note that the working 
+directory needs to be changed for loading the data in this script.
 
 3. In one terminal, Flask app can be started using app.py and the predictions 
 can be obtained using predict.py in another terminal.
