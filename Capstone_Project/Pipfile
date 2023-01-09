@@ -13,6 +13,9 @@ wordcloud = "*"
 nltk = "*"
 keras = "*"
 tensorflow = "*"
+requests = "*"
+gunicorn = "*"
+flask = "*"
 
 [dev-packages]
 

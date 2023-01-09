@@ -20,5 +20,5 @@ ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "app:app"]
 # docker pull svizor/zoomcamp-model:3.9.12-slim
 # docker images
 # docker build -t text_clf:v1 .
-# docker run -it --rm -p 9696:9696 ad2493560758
+# docker run -it --rm -p 9696:9696 2fe0880d7874
 # docker rmi <Image_ID>
